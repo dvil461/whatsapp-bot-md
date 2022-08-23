@@ -50,7 +50,7 @@ bot.addCommand(
 			)}${textToStylist(command.toUpperCase(), 'mono')}\n`
 		})
 		CMD_HELP += `╰────────────────`
-		return await message.sendMessage('```' + CMD_HELP + '```')
+		return await message.sendMessage('' + CMD_HELP + '')
 	}
 )
 
@@ -70,7 +70,7 @@ bot.addCommand(
 				msg += `${index} ${ctt(command.pattern)}\n${command.desc}\n\n`
 			}
 		})
-		await message.sendMessage('```' + msg.trim() + '```')
+		await message.sendMessage('' + msg.trim() + '')
 	}
 )
 bot.addCommand(
@@ -93,31 +93,39 @@ bot.addCommand(
 		const date = new Date()
 
 		let msg =
-			'```' +
-			`╭═══ LEVANTER ═══⊷
-┃❃╭──────────────
-┃❃│ Prefix : ${PREFIX}
-┃❃│ User : ${message.pushName}
-┃❃│ Time : ${date.toLocaleTimeString()}
-┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
-┃❃│ Date : ${date.toLocaleDateString('hi')}
-┃❃│ Version : ${VERSION}
-┃❃│ Plugins : ${PLUGINS.count}
-┃❃│ Ram : ${getRam()}
-┃❃│ Uptime : ${getUptime('t')}
-┃❃╰───────────────
-╰═════════════════⊷
+			'' +
+			`╔════⟬  𝐌𝐄𝐓𝐑𝐎-𝐁𝐎𝐓  ⟭════❃
+║
+╠❐  𝐎𝐖𝐍𝐄𝐑 : 𝐙𝐄𝐘𝐑𝐎𝐗
+║ 
+╠❐  𝐏𝐑𝐄𝐅𝐈𝐗 : ${PREFIX}
+║
+╠❐  𝐔𝐒𝐄𝐑: ${message.pushName}
+║
+╠❐  𝐓𝐈𝐌𝐄 : ${date.toLocaleTimeString()}
+║
+╠❐  𝐃𝐀𝐘 : ${date.toLocaleString('en', { weekday: 'long' })}
+║
+╠❐  𝐃𝐀𝐓𝐄 : ${date.toLocaleDateString('hi')}
+║
+╠❐  𝐕𝐄𝐑𝐒𝐈𝐎𝐍 : ${VERSION}
+║
+╠❐  𝐓𝐎𝐓𝐀𝐋 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 : ${PLUGINS.count}
+║
+╠❐  𝐔𝐏𝐓𝐈𝐌𝐄 : ${getUptime('t')}
+║ 
+╚═══════════════════❃
 ` +
-			'```'
+			''
 		for (const command in commands) {
-			msg += ` ╭─❏ ${textToStylist(
+			msg += `╔═❃ ${textToStylist(
 				command.toLowerCase(),
 				'smallcaps'
-			)} ❏
+			)} ❃
 `
 			for (const plugin of commands[command])
-				msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
-			msg += ` ╰─────────────────
+				msg += `╠❐ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+			msg += `╚════════════════❃
 `
 		}
 		await message.sendMessage(msg.trim())
