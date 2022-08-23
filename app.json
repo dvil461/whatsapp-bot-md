@@ -84,7 +84,7 @@
 		"FOOTERMARK": {
 			"description": "Footer Text.",
 			"required": true,
-			"value": "©𝐙𝐄𝐘𝐑𝐎𝐗"
+			"value": "`©𝐙𝐄𝐘𝐑𝐎𝐗`"
 		},
 		"ANTIWORDS_MSG": {
 			"description": "Message send when antiword.",
