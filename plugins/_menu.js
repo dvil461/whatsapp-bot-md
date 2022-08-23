@@ -8,7 +8,7 @@ const {
 	PLUGINS,
 	getRam,
 } = require('../lib/')
-const { VERSION,FOOTERMARK } = require('../config')
+const { VERSION, FOOTERMARK } = require('../config')
 bot.addCommand(
 	{
 		pattern: 'help ?(.*)',
