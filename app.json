@@ -81,6 +81,11 @@
 			"required": false,
 			"value": "_Antispam Detected &mention kicked_"
 		},
+		"FOOTERMARK": {
+			"description": "Footer Text.",
+			"required": true,
+			"value": "© ZeyRox"
+		},
 		"ANTIWORDS_MSG": {
 			"description": "Message send when antiword.",
 			"required": false,
