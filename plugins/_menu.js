@@ -114,6 +114,16 @@ bot.addCommand(
 ║
 ╠❐  𝐔𝐏𝐓𝐈𝐌𝐄 : ${getUptime('t')}
 ║ 
+║
+║
+║
+║   ${header.𝐙𝐄𝐘𝐑𝐎𝐗}
+║
+║       
+║   ▎▍▌▌▎▌▉▐▏▌
+║   ▎▍▌▌▎▌▉▐▏▌
+║   
+║ &header:𝐙𝐄𝐘𝐑𝐎𝐗
 ╚═══════════════════❃
 ` +
 			''
@@ -125,7 +135,8 @@ bot.addCommand(
 `
 			for (const plugin of commands[command])
 				msg += `╠❐ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
-			msg += `╚════════════════❃
+			msg += `║ 
+			╚════════════════❃
 `
 		}
 		await message.sendMessage(msg.trim())
