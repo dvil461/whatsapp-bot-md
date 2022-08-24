@@ -85,7 +85,7 @@
                          "description": "ownername,botname,imagelink",
                          "required": true,
                          "value": "𝐙𝐄𝐘𝐑𝐎𝐗,𝐌𝐄𝐓𝐑𝐎-𝐁𝐎𝐓,https://i.imgur.com/l0t8EEC.jpeg"
-    },
+                },
 		"FOOTERMARK": {
 			"description": "Footer Text.",
 			"required": true,
