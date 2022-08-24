@@ -9,7 +9,7 @@ const {
 	getRam,
         genHydratedButtons
 } = require('../lib/')
-const { VERSION, FOOTERMARK, BOT_INFO, } = require('../config')
+const { VERSION, FOOTERMARK, BOT_INFO, MENU_MEDIA, } = require('../config')
 bot.addCommand(
 	{
 		pattern: 'help ?(.*)',
