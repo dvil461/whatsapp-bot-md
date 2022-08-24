@@ -57,7 +57,7 @@ bot.addCommand(
 
 bot.addCommand(
 	{
-		pattern: 'cmd ?(.*)',
+		pattern: 'ploo ?(.*)',
 		fromMe: true,
 		dontAddCommandList: true,
 	},
@@ -119,3 +119,45 @@ bot.addCommand(
 		await message.sendMessage(msg.trim())
 	}
 )
+bot.addCommand(
+	{
+		pattern: 'cmd ?(.*)',
+		fromMe: true,
+		dontAddCommandList: true,
+	},
+	async (message, match) => {
+		const commands = {}
+		bot.commands.map(async (command, index) => {
+			if (
+				command.dontAddCommandList === false &&
+				command.pattern !== undefined
+			) {
+				if (!commands[command.type]) commands[command.type] = []
+				commands[command.type].push(ctt(command.pattern).trim())
+			}
+		})
+		const date = new Date()
+
+		let msg =
+			'' +
+			`╔════⟬  ${BOT_INFO.split(",")[1]}  ⟭════❃
+╠❐  𝐎𝐖𝐍𝐄𝐑 : ${BOT_INFO.split(",")[0]}
+╠❐  𝐔𝐒𝐄𝐑: ${message.pushName}
+╚═══════════════════❃
+` +
+			''
+		for (const command in commands) {
+			msg += `╔═❃ ${textToStylist(
+				command.toLowerCase(),
+				'smallcaps'
+			)} ❃
+`
+			for (const plugin of commands[command])
+				msg += `╠❐ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+			msg += `╚════════════════❃
+`
+	}
+		await message.sendMessage(msg.trim())
+	}
+)
+
