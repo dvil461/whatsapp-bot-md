@@ -115,7 +115,7 @@ bot.addCommand(
 				msg += `╠❐ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
 			msg += `╚════════════════❃
 `
-	${FOOTERMARK}	}
+	}
 		await message.sendMessage(msg.trim())
 	}
 )
