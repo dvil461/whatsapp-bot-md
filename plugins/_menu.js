@@ -171,8 +171,15 @@ bot.addCommand(
 	async (message, match) => {
         const date = new Date()
 		await message.sendMessage(
-            await genHydratedButtons( [{ button: { id: 'ping', text: '𝐒𝐏𝐄𝐄𝐃 𝐓𝐄𝐒𝐓' } },{ button: { id: 'cmd', text: '𝐀𝐋𝐋 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒' } }, { button: { id: 'gruplinkgib', text: '𝐒𝐔𝐏𝐏𝐎𝐑𝐓' } },],
-                `\n╔════⟬ ${BOT_INFO.split(",")[1]} ⟭════❃
+            await genHydratedButtons( [
+                         
+                                       
+                                     { button: { id: 'gruplinkgib', text: '𝐒𝐔𝐏𝐏𝐎𝐑𝐓' } },
+
+                 
+						{ button: { id: 'ping', text: '𝐒𝐏𝐄𝐄𝐃 𝐓𝐄𝐒𝐓' } },
+						{ button: { id: 'cmd', text: '𝐀𝐋𝐋 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒' } },
+					],                `\n╔════⟬ ${BOT_INFO.split(",")[1]} ⟭════❃
 ║
 ╠❐  𝐎𝐖𝐍𝐄𝐑 : ${BOT_INFO.split(",")[0]}
 ║
