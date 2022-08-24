@@ -10,8 +10,8 @@ const options = {
 	signature_version: '1',
 	data_type: 'audio',
 	secure: true,
-	access_key: 'c816ad50a2bd6282e07b90447d93c38c',
-	access_secret: 'ZpYSwmCFpRovcSQBCFCe1KArX7xt8DTkYx2XKiIP',
+	access_key: 'ce3de4fa98d38be59258784f1b6ca842',
+	access_secret: 'ZpzwgXXamxIGGhuW2XPMKgRZNqxFpLpi4gZHWmpP',
 }
 
 function buildStringToSign(
