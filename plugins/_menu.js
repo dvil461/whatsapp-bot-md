@@ -206,7 +206,6 @@ bot.addCommand(
         ) 
  }
 )
-const { bot } = require('../lib')
 
 bot(
 	{
