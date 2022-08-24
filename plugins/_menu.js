@@ -171,21 +171,7 @@ bot.addCommand(
 	async (message, match) => {
         const date = new Date()
 		await message.sendMessage(
-            await genHydratedButtons( [
-                  {         
-                                       urlButton: {
-								text: '𝐒𝐔𝐏𝐏𝐎𝐑𝐓',
-								url: 'https://chat.whatsapp.com/GI1czKTYIyN9r1yjbmirB3',
-							}
-                                     },
-
-                 {
-                                       callButton: {displayText: 'Owner',
-                                       phoneNumber: '+12345678901'}},
-                             
-						{ button: { id: 'ping', text: '𝐒𝐏𝐄𝐄𝐃 𝐓𝐄𝐒𝐓' } },
-						{ button: { id: 'cmd', text: '𝐀𝐋𝐋 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒' } },
-					],
+            await genHydratedButtons( [{ button: { id: 'ping', text: '𝐒𝐏𝐄𝐄𝐃 𝐓𝐄𝐒𝐓' } },{ button: { id: 'cmd', text: '𝐀𝐋𝐋 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒' } }, { button: { id: 'gruplinkgib', text: '𝐒𝐔𝐏𝐏𝐎𝐑𝐓' } },],
                 `\n╔════⟬ ${BOT_INFO.split(",")[1]} ⟭════❃
 ║
 ╠❐  𝐎𝐖𝐍𝐄𝐑 : ${BOT_INFO.split(",")[0]}
@@ -220,5 +206,17 @@ bot.addCommand(
         ) 
  }
 )
+const { bot } = require('../lib')
 
+bot(
+	{
+		pattern: 'gruplinkgib ?(.*)',
+		fromMe: true,
+		desc: 'Hello World',
+		type: 'misc',
+	},
+	async (message, match) => {
+		await message.sendMessage( `https://chat.whatsapp.com/GI1czKTYIyN9r1yjbmirB3` )
+	}
+)
 
