@@ -7,6 +7,7 @@ const {
 	getUptime,
 	PLUGINS,
 	getRam,
+        genHydratedButtons
 } = require('../lib/')
 const { VERSION, FOOTERMARK, BOT_INFO, } = require('../config')
 bot.addCommand(
@@ -57,7 +58,7 @@ bot.addCommand(
 
 bot.addCommand(
 	{
-		pattern: 'ploo ?(.*)',
+		pattern: 'list ?(.*)',
 		fromMe: true,
 		dontAddCommandList: true,
 	},
@@ -207,10 +208,10 @@ bot.addCommand(
 ║ 
 ║
 ║       
-║   ▎▍▌▌▎▌▉▐▏▌
-║   ▎▍▌▌▎▌▉▐▏▌
+║   ▎▍▌▌▎▌▉▐▏▌▎▍▌▌▌
+║   ▎▍▌▌▎▌▉▐▏▌▎▍▌▌▌
 ║   
-║  ${BOT_INFO.split(",")[1]}
+║                ${BOT_INFO.split(",")[1]}
 ╚═══════════════════❃\n`,
 		    `${FOOTERMARK}`, message,{image: `${BOT_INFO.split(",")[2]}`}
             ),
