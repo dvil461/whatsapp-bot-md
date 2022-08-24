@@ -114,7 +114,7 @@ bot.addCommand(
 			for (const plugin of commands[command])
 				msg += `╠❐ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
 			msg += `╚════════════════❃
-`, `${FOOTERMARK}`, message,{image: `${BOT_INFO.split(",")[2]}`})
+`, message,{image: `${BOT_INFO.split(",")[2]}`})
 	}
 		await message.sendMessage(msg.trim())
 	}
