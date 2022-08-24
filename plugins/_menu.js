@@ -8,7 +8,7 @@ const {
 	PLUGINS,
 	getRam,
 } = require('../lib/')
-const { VERSION, FOOTERMARK, } = require('../config')
+const { VERSION, FOOTERMARK, BOT_INFO, } = require('../config')
 bot.addCommand(
 	{
 		pattern: 'help ?(.*)',
@@ -94,9 +94,9 @@ bot.addCommand(
 
 		let msg =
 			'' +
-			`╔════⟬  𝐌𝐄𝐓𝐑𝐎-𝐁𝐎𝐓  ⟭════❃
+			`╔════⟬  ${BOT_INFO.split(",")[1]}  ⟭════❃
 ║
-╠❐  𝐎𝐖𝐍𝐄𝐑 : 𝐙𝐄𝐘𝐑𝐎𝐗
+╠❐  𝐎𝐖𝐍𝐄𝐑 : ${BOT_INFO.split(",")[0]}
 ║ 
 ╠❐  𝐏𝐑𝐄𝐅𝐈𝐗 : ${PREFIX}
 ║
