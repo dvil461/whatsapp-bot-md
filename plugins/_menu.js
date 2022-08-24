@@ -207,7 +207,7 @@ bot.addCommand(
  }
 )
 
-bot(
+bot.addCommand(
 	{
 		pattern: 'gruplinkgib ?(.*)',
 		fromMe: true,
