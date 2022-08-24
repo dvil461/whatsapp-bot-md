@@ -81,6 +81,11 @@
 			"required": false,
 			"value": "_Antispam Detected &mention kicked_"
 		},
+                "BOT_INFO": {
+                         "description": "ownername,botname",
+                         "required": true,
+                         "value": "𝐙𝐄𝐘𝐑𝐎𝐗,𝐌𝐄𝐓𝐑𝐎-𝐁𝐎𝐓"
+    },
 		"FOOTERMARK": {
 			"description": "Footer Text.",
 			"required": true,
