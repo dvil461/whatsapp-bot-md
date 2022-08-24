@@ -206,7 +206,7 @@ bot.addCommand(
 ║   
 ║                ${BOT_INFO.split(",")[1]}
 ╚═══════════════════❃\n`,
-		    `${FOOTERMARK}`, message,{image: `${BOT_INFO.split(",")[2]}`}
+		    `${FOOTERMARK}`, message,{image: `${MENU_MEDIA.split(",")[1]}`}
             ),
             {},
             'template'
