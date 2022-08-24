@@ -57,7 +57,7 @@ bot.addCommand(
 
 bot.addCommand(
 	{
-		pattern: 'menu ?(.*)',
+		pattern: 'cmd ?(.*)',
 		fromMe: true,
 		dontAddCommandList: true,
 	},
@@ -114,7 +114,7 @@ bot.addCommand(
 			for (const plugin of commands[command])
 				msg += `╠❐ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
 			msg += `╚════════════════❃
-`, message,{image: `${BOT_INFO.split(",")[2]}`})
+`
 	}
 		await message.sendMessage(msg.trim())
 	}
