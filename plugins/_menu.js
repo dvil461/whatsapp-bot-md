@@ -54,28 +54,7 @@ bot.addCommand(
 	}
 )
 
-bot.addCommand(
-	{
-		pattern: 'list ?(.*)',
-		fromMe: true,
-		dontAddCommandList: true,
-	},
-	async (message, match) => {
-		let msg = ''
-		bot.commands.map(async (command, index) => {
-			if (
-				command.dontAddCommandList === false &&
-				command.pattern !== undefined
-			) {
-				msg += `╔════⟬  ${BOT_INFO.split(",")[1]}  ⟭════❃
-║❐${index}❐ ${ctt(command.pattern)}\n${command.desc}\n\n
-╚═══════════════════❃
-` ${FOOTERMARK}
-			}
-		})
-		await message.sendMessage('' + msg.trim() + '')
-	}
-)
+
 bot.addCommand(
 	{
 		pattern: 'menu ?(.*)',
