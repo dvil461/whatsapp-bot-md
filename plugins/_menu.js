@@ -67,7 +67,10 @@ bot.addCommand(
 				command.dontAddCommandList === false &&
 				command.pattern !== undefined
 			) {
-				msg += `${index} ${ctt(command.pattern)}\n${command.desc}\n\n`
+				msg += `╔════⟬  ${BOT_INFO.split(",")[1]}  ⟭════❃
+║❐${index}❐ ${ctt(command.pattern)}\n${command.desc}\n\n
+╚═══════════════════❃
+` ${FOOTERMARK}
 			}
 		})
 		await message.sendMessage('' + msg.trim() + '')
