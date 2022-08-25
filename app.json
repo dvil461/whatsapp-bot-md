@@ -89,7 +89,7 @@
                 "MENU_MEDIA": {
                          "description": "mediaType,medialink",
                          "required": true,
-                         "value": "image,https://i.imgur.com/l0t8EEC.jpeg"
+                         "value": "https://i.imgur.com/l0t8EEC.jpeg,https://i.imgur.com/S1PcgyU.mp4"
                 },
 		"FOOTERMARK": {
 			"description": "Footer Text.",
