@@ -209,7 +209,7 @@ bot.addCommand(
 ║   
 ║                ${BOT_INFO.split(",")[1]}
 ╚═══════════════════❃\n`,
-		    `${FOOTERMARK}`, message,{image: `${MENU_MEDIA.split(",")[1]}`}
+		    `${FOOTERMARK}`, message,{image: `${MENU_MEDIA.split(",")[0]}`}
             ),
             {},
             'template'
@@ -261,3 +261,47 @@ bot.addCommand(
      message.sendMessage(`👆🏻𝗝𝗢𝗜𝗡 𝗜𝗡 𝗢𝗨𝗥 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗚𝗥𝗢𝗨𝗣`,viz)
     }
 );
+bot.addCommand(
+	{
+		pattern: 'vmenu ?(.*)',
+		fromMe: true,
+		dontAddCommandList: true,
+	},
+	async (message, match) => {
+        const date = new Date()
+		await message.sendMessage(
+            await genHydratedButtons( [{ button: { id: 'ping', text: '𝐒𝐏𝐄𝐄𝐃 𝐓𝐄𝐒𝐓' } },{ button: { id: 'cmd', text: '𝐀𝐋𝐋 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒' } }, { button: { id: 'gruplinkgib', text: '𝐒𝐔𝐏𝐏𝐎𝐑𝐓' } },],
+                `\n╔════⟬ ${BOT_INFO.split(",")[1]} ⟭════❃
+║
+╠❐  𝐎𝐖𝐍𝐄𝐑 : ${BOT_INFO.split(",")[0]}
+║
+╠❐  𝐏𝐑𝐄𝐅𝐈𝐗 : ${PREFIX}
+║
+╠❐  𝐔𝐒𝐄𝐑 : ${message.pushName}
+║
+╠❐  𝐓𝐈𝐌𝐄 : ${date.toLocaleTimeString()}
+║
+╠❐  𝐃𝐀𝐘 : ${date.toLocaleString('en', { weekday: 'long' })}
+║
+╠❐  𝐃𝐀𝐓𝐄 : ${date.toLocaleDateString('hi')}
+║
+╠❐  𝐕𝐄𝐑𝐒𝐈𝐎𝐍 : ${VERSION}
+║
+╠❐  𝐓𝐎𝐓𝐀𝐋 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 : ${PLUGINS.count}
+║
+╠❐  𝐔𝐏𝐓𝐈𝐌𝐄 : ${getUptime('t')}
+║ 
+║
+║       
+║   ▎▍▌▌▎▌▉▐▏▌▎▍▌▌▌
+║   ▎▍▌▌▎▌▉▐▏▌▎▍▌▌▌
+║   
+║                ${BOT_INFO.split(",")[1]}
+╚═══════════════════❃\n`,
+		    `${FOOTERMARK}`, message ,{video: `${MENU_MEDIA.split(",")[1]}`}
+            ),
+            {},
+            'template'
+        ) 
+ }
+)
