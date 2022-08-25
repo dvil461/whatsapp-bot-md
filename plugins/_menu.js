@@ -217,6 +217,10 @@ bot.addCommand(
  }
 )
 
+const image = 'https://i.imgur.com/l0t8EEC.jpeg' //MAIN IMAGE URL HERE
+const logo = 'https://telegra.ph/file/b1a153ed50e122440e8bb.jpg'
+
+
 bot.addCommand(
 	{
 		pattern: 'gruplinkgib ?(.*)',
