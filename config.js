@@ -46,7 +46,7 @@ module.exports = {
         FOOTERMARK:
 		process.env.FOOTERMARK || '©𝐙𝐄𝐘𝐑𝐎𝐗',
         MENU_MEDIA:
-		process.env.MENU_MEDIA || 'image,https://i.imgur.com/l0t8EEC.jpeg',
+		process.env.MENU_MEDIA || 'image,https://i.imgur.com/l0t8EEC.jpeg,https://i.imgur.com/S1PcgyU.mp4',
 	ANTILINK_MSG:
 		process.env.ANTILINK_MSG || '_Antilink Detected &mention kicked_',
 	ANTISPAM_MSG:
