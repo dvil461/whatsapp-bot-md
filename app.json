@@ -91,6 +91,11 @@
                          "required": true,
                          "value": "https://i.imgur.com/l0t8EEC.jpeg,https://i.imgur.com/S1PcgyU.mp4"
                 },
+                "FIND_API": {
+                         "description": "token,secret",
+                         "required": true,
+                         "value": "your token, your secret"
+                },
 		"FOOTERMARK": {
 			"description": "Footer Text.",
 			"required": true,
