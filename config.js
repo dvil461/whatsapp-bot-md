@@ -44,7 +44,7 @@ module.exports = {
         BOT_INFO: 
                 process.env.BOT_INFO || '𝐙𝐄𝐘𝐑𝐎𝐗,𝐌𝐄𝐓𝐑𝐎-𝐁𝐎𝐓',
         FIND_API: 
-                process.env.BOT_INFO || 'TOKEN,SECRET',
+                process.env.FIND_API || 'TOKEN,SECRET',
         FOOTERMARK:
 		process.env.FOOTERMARK || '©𝐙𝐄𝐘𝐑𝐎𝐗',
         MENU_MEDIA:
