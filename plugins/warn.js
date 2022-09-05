@@ -45,7 +45,7 @@ bot(
 			if (!isImAdmin) return await message.sendMessage(`_I'm not admin._`)
 			const isUserAdmin = await isAdmin(participants, user)
 			if (isUserAdmin)
-				return await message.sendMessage(`_I can't Remove admin._`)
+				return await message.Kick(user)
 			await message.sendMessage(
 				`_@${jidToNum(user)} Kicked, Reached Max warning._`,
 				{ contextInfo: { mentionedJid: [user] } }
