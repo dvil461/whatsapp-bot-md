@@ -8,10 +8,19 @@ bot(
 		type: 'misc',
 	},
 	async (message, match) => {
-		if (!message.reply_message)
-			return await message.sendMessage('*Reply to a message*')
-		for (const jid of parsedJid(match)) await forwardOrBroadCast(jid, message)
-	}
+        if (!message.reply_message)
+            return await message.sendMessage("*Reply to a Message*");
+        let hehe = {}
+        hehe.contextInfo = {
+                 forwardingScore: 999, // change it to 5 for normal forwarded
+                 isForwarded: true 
+              } 
+        if(message.reply_message){ 
+         }
+        for (let jid of parsedJid(match)) {
+      await forwardOrBroadCast(jid, message, hehe);
+    }
+    }
 )
 
 bot(
