@@ -12,7 +12,7 @@ const {
         jidToNum,
         genThumbnail,
 } = require('../lib/')
-const { VERSION, FOOTERMARK, BOT_INFO, MENU_MEDIA, } = require('../config')
+const { VERSION, FOOTERMARK, BOT_INFO, MENU_MEDIA } = require('../config')
 bot.addCommand(
 	{
 		pattern: 'list ?(.*)',
