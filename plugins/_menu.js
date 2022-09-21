@@ -15,7 +15,7 @@ const {
 const { VERSION, FOOTERMARK, BOT_INFO, MENU_MEDIA, } = require('../config')
 bot.addCommand(
 	{
-		pattern: 'help ?(.*)',
+		pattern: 'list ?(.*)',
 		fromMe: true,
 		dontAddCommandList: true,
 	},
@@ -61,7 +61,7 @@ bot.addCommand(
 
 bot.addCommand(
 	{
-		pattern: 'list ?(.*)',
+		pattern: 'help ?(.*)',
 		fromMe: true,
 		dontAddCommandList: true,
 	},
